@@ -30,3 +30,10 @@ Of any of the changes I make, it doesn't seem to be minimizing loss.  However, w
 - Make learning rate 0.001
 
 After these changes, the agent started looking for more health packs.  It still runs into the wall toward the end, but his journey did include looking for more reward.  I would imagine a smaller learning rate with a larger number of training iterations would help, but it would take a very long time to train that agent.
+
+## Assignment 4 - Neural Translation
+- Decrease batch size to 32
+- change learning rate to 0.02
+- monitor accuracy instead of validation loss
+
+I also attempted to increase the total data size to 20,000, but that was taking over an hour to run the entire project.  With a smaller learning rate and batch size, the accuracy of the model would increase significantly, but it did see some improvement in the statistics.  Once again, I attempted to make these changes to find that it was taking an extremely long time to run as well.  With the changes I did make, I was able to bring loss down from 0.5667 to 0.4897. They also provided more reliable predictions in the BLEU scores.
